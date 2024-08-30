@@ -1,0 +1,30 @@
+.navbar{
+    padding: 0;
+}
+.navbar .navbar-nav .nav-link{
+    padding: 1em;
+}
+.navbar .navbar-nav .nav-item{
+    position: relative;
+}
+.navbar .navbar-nav .nav-item::after{
+    position:absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    transition: all .5s;
+}
+.navbar .navbar-nav .nav-item:hover::after{
+    width: 50%;
+}
+.card:hover{
+    color: red;
+    box-shadow: 0 0 10px 2px red;
+}
+.card{
+    transition: box-shadow .3s;
+}
